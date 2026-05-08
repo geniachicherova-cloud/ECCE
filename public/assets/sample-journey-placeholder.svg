@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">ECCE sample journey placeholder diagram</title>
+  <desc id="desc">A restrained diagram showing clinic, biobank, sequencing, and modelling steps.</desc>
+  <rect width="1200" height="720" fill="#0F1B2D"/>
+  <path d="M160 360 C320 160 520 560 700 360 S980 260 1040 360" fill="none" stroke="#3FE0C5" stroke-width="6" opacity="0.8"/>
+  <g fill="#E8EDF5" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600">
+    <text x="95" y="445">Clinic</text>
+    <text x="360" y="190">Biobank</text>
+    <text x="670" y="505">Sequencing</text>
+    <text x="930" y="285">Model</text>
+  </g>
+  <g fill="#3FE0C5">
+    <circle cx="160" cy="360" r="20"/>
+    <circle cx="420" cy="240" r="20"/>
+    <circle cx="740" cy="440" r="20"/>
+    <circle cx="1040" cy="360" r="20"/>
+  </g>
+</svg>

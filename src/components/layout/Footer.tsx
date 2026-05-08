@@ -27,8 +27,9 @@ export function Footer(): ReactNode {
           <p className="mt-3">ERC Synergy Grant · IARC/WHO · Wellcome Sanger Institute · UC San Diego</p>
         </div>
       </div>
-      <div className="mx-auto mt-10 max-w-[1440px] border-t border-[var(--ecce-color-line-subtle)] pt-6">
-        Prototype only. No public deployment. EN active; FR/ES placeholders.
+      <div className="mx-auto mt-10 flex max-w-[1440px] flex-wrap items-center justify-between gap-4 border-t border-[var(--ecce-color-line-subtle)] pt-6">
+        <span>Prototype only. No public deployment.</span>
+        <span className="font-mono text-xs uppercase tracking-[0.08em]">EN active · FR/ES placeholders</span>
       </div>
     </footer>
   );

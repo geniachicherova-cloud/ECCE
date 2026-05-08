@@ -1,0 +1,14 @@
+{
+  "version": 8,
+  "name": "ECCE self-hosted minimal map style",
+  "sources": {},
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#0F1B2D"
+      }
+    }
+  ]
+}
