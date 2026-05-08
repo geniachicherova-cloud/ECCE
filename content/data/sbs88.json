@@ -1,0 +1,493 @@
+{
+  "signature": "SBS88",
+  "description": "COSMIC v3 mutational signature attributed to colibactin exposure (pks+ E. coli).",
+  "asOf": "2026-05-08",
+  "owner": "ECCE WP2 — pending replacement with canonical COSMIC v3.4 export",
+  "source": {
+    "label": "COSMIC v3.4 SBS88",
+    "url": "https://cancer.sanger.ac.uk/signatures/sbs/sbs88/"
+  },
+  "notes": "[STAND-IN] Representative shape only. The 96-channel structure is correct, frequencies are illustrative and biased toward the T>N enrichment associated with SBS88 — they are not the canonical COSMIC values. Replace with the official sbs88 export before publish.",
+  "channels": [
+    {
+      "substitution": "C>A",
+      "trinucleotide": "ACA",
+      "frequency": 0.0067
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "ACC",
+      "frequency": 0.00803
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "ACG",
+      "frequency": 0.00636
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "ACT",
+      "frequency": 0.00545
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "CCA",
+      "frequency": 0.00736
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "CCC",
+      "frequency": 0.00777
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "CCG",
+      "frequency": 0.00576
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "CCT",
+      "frequency": 0.00587
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "GCA",
+      "frequency": 0.00785
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "GCC",
+      "frequency": 0.00723
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "GCG",
+      "frequency": 0.00541
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "GCT",
+      "frequency": 0.0065
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "TCA",
+      "frequency": 0.00803
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "TCC",
+      "frequency": 0.00655
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "TCG",
+      "frequency": 0.00539
+    },
+    {
+      "substitution": "C>A",
+      "trinucleotide": "TCT",
+      "frequency": 0.00718
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "ACA",
+      "frequency": 0.00787
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "ACC",
+      "frequency": 0.00591
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "ACG",
+      "frequency": 0.00572
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "ACT",
+      "frequency": 0.00773
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "CCA",
+      "frequency": 0.0074
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "CCC",
+      "frequency": 0.00548
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "CCG",
+      "frequency": 0.0063
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "CCT",
+      "frequency": 0.00802
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "GCA",
+      "frequency": 0.00675
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "GCC",
+      "frequency": 0.00537
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "GCG",
+      "frequency": 0.00698
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "GCT",
+      "frequency": 0.00795
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "TCA",
+      "frequency": 0.00608
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "TCC",
+      "frequency": 0.0056
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "TCG",
+      "frequency": 0.0076
+    },
+    {
+      "substitution": "C>G",
+      "trinucleotide": "TCT",
+      "frequency": 0.00756
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "ACA",
+      "frequency": 0.00557
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "ACC",
+      "frequency": 0.00612
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "ACG",
+      "frequency": 0.00796
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "ACT",
+      "frequency": 0.00695
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "CCA",
+      "frequency": 0.00536
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "CCC",
+      "frequency": 0.00679
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "CCG",
+      "frequency": 0.00801
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "CCT",
+      "frequency": 0.00627
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "GCA",
+      "frequency": 0.00549
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "GCC",
+      "frequency": 0.00744
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "GCG",
+      "frequency": 0.0077
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "GCT",
+      "frequency": 0.0057
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "TCA",
+      "frequency": 0.00595
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "TCC",
+      "frequency": 0.00789
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "TCG",
+      "frequency": 0.00714
+    },
+    {
+      "substitution": "C>T",
+      "trinucleotide": "TCT",
+      "frequency": 0.00538
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "ATA",
+      "frequency": 0.03694
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "ATC",
+      "frequency": 0.00803
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "ATG",
+      "frequency": 0.00646
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "ATT",
+      "frequency": 0.03577
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "CTA",
+      "frequency": 0.02154
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "CTC",
+      "frequency": 0.00783
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "CTG",
+      "frequency": 0.00584
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "CTT",
+      "frequency": 0.02007
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "GTA",
+      "frequency": 0.02207
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "GTC",
+      "frequency": 0.00733
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "GTG",
+      "frequency": 0.00545
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "GTT",
+      "frequency": 0.02068
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "TTA",
+      "frequency": 0.03838
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "TTC",
+      "frequency": 0.00666
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "TTG",
+      "frequency": 0.00537
+    },
+    {
+      "substitution": "T>A",
+      "trinucleotide": "TTT",
+      "frequency": 0.03742
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "ATA",
+      "frequency": 0.03827
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "ATC",
+      "frequency": 0.006
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "ATG",
+      "frequency": 0.00565
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "ATT",
+      "frequency": 0.03801
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "CTA",
+      "frequency": 0.02177
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "CTC",
+      "frequency": 0.00553
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "CTG",
+      "frequency": 0.0062
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "CTT",
+      "frequency": 0.02227
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "GTA",
+      "frequency": 0.02114
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "GTC",
+      "frequency": 0.00536
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "GTG",
+      "frequency": 0.00687
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "GTT",
+      "frequency": 0.02227
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "TTA",
+      "frequency": 0.03653
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "TTC",
+      "frequency": 0.00554
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "TTG",
+      "frequency": 0.00751
+    },
+    {
+      "substitution": "T>C",
+      "trinucleotide": "TTT",
+      "frequency": 0.038
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "ATA",
+      "frequency": 0.00563
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "ATC",
+      "frequency": 0.00602
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "ATG",
+      "frequency": 0.00793
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "ATT",
+      "frequency": 0.00705
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "CTA",
+      "frequency": 0.00537
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "CTC",
+      "frequency": 0.00668
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "CTG",
+      "frequency": 0.00803
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "CTT",
+      "frequency": 0.00637
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "GTA",
+      "frequency": 0.00545
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "GTC",
+      "frequency": 0.00734
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "GTG",
+      "frequency": 0.00778
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "GTT",
+      "frequency": 0.00577
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "TTA",
+      "frequency": 0.00586
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "TTC",
+      "frequency": 0.00784
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "TTG",
+      "frequency": 0.00724
+    },
+    {
+      "substitution": "T>G",
+      "trinucleotide": "TTT",
+      "frequency": 0.00541
+    }
+  ]
+}

@@ -16,7 +16,7 @@ export function Quote({
       {...props}
     >
       <p>{children}</p>
-      {cite ? <footer className="mt-4 font-mono text-xs uppercase tracking-[0.08em] text-[var(--ecce-color-ink-low)]">{cite}</footer> : null}
+      {cite ? <footer className="mt-4 font-mono text-xs uppercase tracking-[0.08em] text-[var(--ecce-color-ink-mid)]">{cite}</footer> : null}
     </blockquote>
   );
 }

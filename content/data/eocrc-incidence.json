@@ -1,0 +1,44 @@
+{
+  "id": "eocrc-incidence-by-birth-cohort",
+  "label": "Early-onset colorectal cancer incidence trends by birth cohort",
+  "unit": "Age-standardised rate ratio (1950 cohort = 1.0)",
+  "asOf": "2026-05-08",
+  "owner": "Genia Chicherova, IARC",
+  "notes": "[STAND-IN] Representative shape only. Replace with the canonical IARC CI5 XI / Downham et al. 2026 birth-cohort series before publish. The trend direction and magnitudes are illustrative; do not cite these exact values.",
+  "source": [
+    { "label": "IARC CI5 XI (placeholder shape)" },
+    { "label": "Downham et al. 2026, JNCI (placeholder shape)" }
+  ],
+  "series": [
+    {
+      "id": "high-income",
+      "label": "High-income countries",
+      "points": [
+        { "cohort": 1950, "rateRatio": 1.0 },
+        { "cohort": 1955, "rateRatio": 1.04 },
+        { "cohort": 1960, "rateRatio": 1.12 },
+        { "cohort": 1965, "rateRatio": 1.27 },
+        { "cohort": 1970, "rateRatio": 1.46 },
+        { "cohort": 1975, "rateRatio": 1.71 },
+        { "cohort": 1980, "rateRatio": 1.98 },
+        { "cohort": 1985, "rateRatio": 2.24 },
+        { "cohort": 1990, "rateRatio": 2.43 }
+      ]
+    },
+    {
+      "id": "transitioning",
+      "label": "Transitioning economies",
+      "points": [
+        { "cohort": 1950, "rateRatio": 0.78 },
+        { "cohort": 1955, "rateRatio": 0.82 },
+        { "cohort": 1960, "rateRatio": 0.9 },
+        { "cohort": 1965, "rateRatio": 1.02 },
+        { "cohort": 1970, "rateRatio": 1.16 },
+        { "cohort": 1975, "rateRatio": 1.31 },
+        { "cohort": 1980, "rateRatio": 1.5 },
+        { "cohort": 1985, "rateRatio": 1.69 },
+        { "cohort": 1990, "rateRatio": 1.83 }
+      ]
+    }
+  ]
+}

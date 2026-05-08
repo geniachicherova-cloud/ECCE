@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Footer(): ReactNode {
   return (
-    <footer className="border-t border-[var(--ecce-color-line-subtle)] px-5 py-12 text-sm text-[var(--ecce-color-ink-low)] lg:px-24">
+    <footer className="border-t border-[var(--ecce-color-line-subtle)] px-5 py-12 text-sm text-[var(--ecce-color-ink-mid)] lg:px-24">
       <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-4">
         <div>
           <div className="font-serif text-xl font-semibold text-[var(--ecce-color-ink-high)]">ECCE</div>

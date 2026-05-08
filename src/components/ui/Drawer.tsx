@@ -17,7 +17,10 @@ export function Drawer({
   children: ReactNode;
 }): ReactNode {
   return (
-    <div aria-hidden={!open} className={cn("fixed inset-0 z-[200]", open ? "pointer-events-auto" : "pointer-events-none")}>
+    <div
+      className={cn("fixed inset-0 z-[200]", open ? "pointer-events-auto" : "pointer-events-none")}
+      inert={!open}
+    >
       <div className={cn("absolute inset-0 bg-[var(--ecce-color-background-overlay)] transition-opacity", open ? "opacity-100" : "opacity-0")} />
       <aside
         aria-label={title}
