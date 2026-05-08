@@ -1,26 +1,69 @@
+@import "../styles/fonts.css";
+@import "../styles/tokens.css";
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--ecce-color-background-base);
+  --color-foreground: var(--ecce-color-ink-high);
+  --color-surface: var(--ecce-color-background-surface);
+  --color-signal: var(--ecce-color-accent-signal);
+  --color-amber: var(--ecce-color-accent-amber);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--ecce-color-background-base);
+  color: var(--ecce-color-ink-high);
+  font-family: var(--font-body);
+  font-size: var(--ecce-typography-size-body);
+  line-height: var(--ecce-typography-line-height-body);
+  letter-spacing: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ecce-color-line-focus-ring);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: rgba(63, 224, 197, 0.28);
+  color: var(--ecce-color-ink-high);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }

@@ -1,0 +1,194 @@
+{
+  "$schema": "https://schemas.style-dictionary.dev/v3/style-dictionary.schema.json",
+  "metadata": {
+    "name": "ECCE Design Tokens",
+    "version": "1.0.0",
+    "direction": "Molecular Cartography (Direction A)",
+    "owner": "Claude Code (architect)",
+    "status": "specification — to be reviewed alongside Gemini's color exploration before lock",
+    "lastUpdated": "2026-05-08"
+  },
+  "color": {
+    "background": {
+      "base":          { "value": "#0A0E1A", "comment": "primary dark background (deep night-blue)" },
+      "elevated":      { "value": "#0F1B2D", "comment": "elevated surfaces (sticky nav, side drawer)" },
+      "surface":       { "value": "#131F33", "comment": "cards, panels" },
+      "overlay":       { "value": "rgba(10,14,26,0.72)", "comment": "modal / drawer overlay" }
+    },
+    "ink": {
+      "high":          { "value": "#E8EDF5", "comment": "primary text on dark — contrast 14:1" },
+      "mid":           { "value": "#A2ADC0", "comment": "secondary text on dark — contrast 6.5:1" },
+      "low":           { "value": "#6B7689", "comment": "tertiary / metadata — contrast 3.5:1 — large text only" },
+      "inverse-high":  { "value": "#0F1419", "comment": "primary text on light surfaces" },
+      "inverse-mid":   { "value": "#5C6B7A" }
+    },
+    "accent": {
+      "signal":        { "value": "#3FE0C5", "comment": "primary accent — CTA, key data, hero arcs (luminous teal)" },
+      "signal-deep":   { "value": "#1A8E7A", "comment": "hover / pressed state for signal" },
+      "amber":         { "value": "#F0B86E", "comment": "warm accent — emphasis, hover highlights" },
+      "amber-deep":    { "value": "#B07D3E" },
+      "coral":         { "value": "#E8694F", "comment": "urgency / eoCRC stats — use sparingly" },
+      "coral-deep":    { "value": "#A93B25" }
+    },
+    "line": {
+      "subtle":        { "value": "rgba(255,255,255,0.08)" },
+      "default":       { "value": "rgba(255,255,255,0.14)" },
+      "strong":        { "value": "rgba(255,255,255,0.28)" },
+      "focus-ring":    { "value": "#3FE0C5", "comment": "2px outline, 2px offset, on every focusable element" }
+    },
+    "data-viz": {
+      "categorical-1": { "value": "#3FE0C5" },
+      "categorical-2": { "value": "#F0B86E" },
+      "categorical-3": { "value": "#7A9CFF" },
+      "categorical-4": { "value": "#E8694F" },
+      "categorical-5": { "value": "#B58CFF" },
+      "categorical-6": { "value": "#5DD9F5" },
+      "sequential-low":  { "value": "#0F1B2D" },
+      "sequential-mid":  { "value": "#1A8E7A" },
+      "sequential-high": { "value": "#3FE0C5" },
+      "comment": "Use categorical for distinct categories (regions, WPs); sequential for heatmaps and signature plots"
+    },
+    "paper": {
+      "base":          { "value": "#FAFAF7", "comment": "editorial pages: CRC explainer, long-form insights" },
+      "elevated":      { "value": "#FFFFFF" },
+      "ink-high":      { "value": "#0F1419" }
+    }
+  },
+  "typography": {
+    "family": {
+      "display":       { "value": "\"Newsreader\", Georgia, serif", "comment": "LOCKED — Newsreader (free, Google Fonts; self-host the woff2 files in /public/fonts/). Editorial serif used for H1/H2/H3 and pulled quotes." },
+      "body":          { "value": "\"Inter\", -apple-system, BlinkMacSystemFont, system-ui, sans-serif", "comment": "LOCKED — Inter (free, self-hosted). Body & UI." },
+      "mono":          { "value": "\"JetBrains Mono\", \"SF Mono\", Menlo, monospace", "comment": "LOCKED — JetBrains Mono (free, self-hosted). DOIs, citations, region badges, code." }
+    },
+    "weight": {
+      "regular": { "value": 400 },
+      "medium":  { "value": 500 },
+      "semibold":{ "value": 600 },
+      "bold":    { "value": 700 }
+    },
+    "size": {
+      "h1":      { "value": "clamp(2.5rem, 4.5vw, 4.75rem)", "comment": "hero / page titles" },
+      "h2":      { "value": "clamp(1.75rem, 3vw, 2.75rem)" },
+      "h3":      { "value": "clamp(1.25rem, 2vw, 1.625rem)" },
+      "h4":      { "value": "clamp(1.125rem, 1.4vw, 1.25rem)" },
+      "body":    { "value": "clamp(1rem, 0.85rem + 0.25vw, 1.125rem)" },
+      "small":   { "value": "0.9375rem" },
+      "caption": { "value": "0.875rem" },
+      "micro":   { "value": "0.75rem", "comment": "metadata, footnotes only" }
+    },
+    "line-height": {
+      "display": { "value": 1.15 },
+      "heading": { "value": 1.25 },
+      "body":    { "value": 1.55 },
+      "caption": { "value": 1.45 }
+    },
+    "letter-spacing": {
+      "display":  { "value": "-0.02em" },
+      "heading":  { "value": "-0.01em" },
+      "body":     { "value": "0" },
+      "caps":     { "value": "0.08em", "comment": "for small caps / region badges" }
+    },
+    "max-line-length": {
+      "body":     { "value": "68ch" },
+      "lead":     { "value": "52ch" }
+    }
+  },
+  "space": {
+    "0":   { "value": "0" },
+    "1":   { "value": "4px" },
+    "2":   { "value": "8px" },
+    "3":   { "value": "12px" },
+    "4":   { "value": "16px" },
+    "5":   { "value": "24px" },
+    "6":   { "value": "32px" },
+    "7":   { "value": "48px" },
+    "8":   { "value": "64px" },
+    "9":   { "value": "96px" },
+    "10":  { "value": "128px" },
+    "11":  { "value": "192px" },
+    "section-y": { "value": "clamp(80px, 8vw, 160px)", "comment": "vertical padding between major sections" }
+  },
+  "radius": {
+    "sm":   { "value": "6px" },
+    "md":   { "value": "12px" },
+    "lg":   { "value": "16px",  "comment": "default for cards" },
+    "xl":   { "value": "24px" },
+    "pill": { "value": "999px" }
+  },
+  "shadow": {
+    "card-rest":    { "value": "0 1px 0 rgba(255,255,255,0.04) inset, 0 6px 24px rgba(0,0,0,0.18)" },
+    "card-hover":   { "value": "0 1px 0 rgba(255,255,255,0.06) inset, 0 14px 38px rgba(0,0,0,0.32)" },
+    "drawer":       { "value": "0 24px 64px rgba(0,0,0,0.5)" }
+  },
+  "duration": {
+    "instant": { "value": "80ms" },
+    "fast":    { "value": "160ms" },
+    "default": { "value": "240ms" },
+    "slow":    { "value": "420ms" },
+    "scrub":   { "value": "750ms",  "comment": "for cinematic reveals; never used for UI feedback" }
+  },
+  "easing": {
+    "out":      { "value": "cubic-bezier(0.16, 1, 0.3, 1)", "comment": "default — graceful deceleration" },
+    "in-out":   { "value": "cubic-bezier(0.65, 0, 0.35, 1)" },
+    "spring":   { "value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "comment": "rare — only for elastic micro-interactions" }
+  },
+  "z-index": {
+    "base":    { "value": 0 },
+    "card":    { "value": 1 },
+    "sticky":  { "value": 100 },
+    "drawer":  { "value": 200 },
+    "modal":   { "value": 300 },
+    "toast":   { "value": 400 }
+  },
+  "breakpoint": {
+    "sm":  { "value": "480px" },
+    "md":  { "value": "768px" },
+    "lg":  { "value": "1024px" },
+    "xl":  { "value": "1280px" },
+    "2xl": { "value": "1440px",  "comment": "page max-width" }
+  },
+  "grid": {
+    "columns-mobile":  { "value": 4 },
+    "columns-tablet":  { "value": 8 },
+    "columns-desktop": { "value": 12 },
+    "gutter-mobile":   { "value": "16px" },
+    "gutter-tablet":   { "value": "24px" },
+    "gutter-desktop":  { "value": "24px" },
+    "margin-mobile":   { "value": "20px" },
+    "margin-tablet":   { "value": "48px" },
+    "margin-desktop":  { "value": "96px" },
+    "max-width":       { "value": "1440px" }
+  },
+  "motion": {
+    "respect-reduced-motion": { "value": true, "comment": "MANDATORY — every animated component must check prefers-reduced-motion" },
+    "scroll-effect-whitelist": {
+      "value": [
+        "hero-parallax",
+        "section-fade-translate-on-enter",
+        "stat-count-up",
+        "chart-draw-on-scroll",
+        "sample-journey-pin"
+      ],
+      "comment": "Anything outside this list requires explicit architect sign-off."
+    },
+    "max-concurrent-animations": { "value": 2, "comment": "no more than 2 animations active simultaneously above the fold" }
+  },
+  "performance-budget": {
+    "lcp-ms":             { "value": 2000 },
+    "inp-ms":             { "value": 200 },
+    "cls":                { "value": 0.05 },
+    "js-first-load-kb":   { "value": 180 },
+    "page-weight-home-mb":{ "value": 1.5 },
+    "page-weight-other-mb":{"value": 1.0 },
+    "image-above-fold-kb":{ "value": 200 },
+    "image-body-kb":      { "value": 500 }
+  },
+  "accessibility": {
+    "wcag-target":          { "value": "2.2 AA (AAA aspirational)" },
+    "min-contrast-body":    { "value": 4.5 },
+    "min-contrast-large":   { "value": 3.0 },
+    "focus-ring-required":  { "value": true },
+    "skip-link-required":   { "value": true },
+    "alt-text-min-words":   { "value": 6, "comment": "scientifically meaningful — fail build if shorter" }
+  }
+}

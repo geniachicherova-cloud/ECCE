@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ECCE Prototype
 
-## Getting Started
+Static-export Next.js 15 prototype for the ECCE Project website.
 
-First, run the development server:
+## Commands
+
+- `npm run dev` - generate tokens, watch Velite content, and start Next.
+- `npm run build` - generate token CSS, build Velite content, validate schemas, and export static HTML to `out/`.
+- `npm run build:ci` - run lint, Stylelint, typecheck, Vitest, validation, and build.
+- `npm run content:seed` - one-off bootstrap from `../ECCE website 08May2026.docx`.
+- `npm run validate` - run content graph validation and key-figure JSON Schema validation.
+- `npm run ladle` - review design-system primitives.
+
+## Guardrails
+
+- Static export only. No API routes, server actions, ISR, or runtime data fetching.
+- Fonts are self-hosted from `/public/fonts`; no Google Fonts hot-load.
+- `content/data/key-figures.json` is the source for public numbers. Every figure must keep source, owner, and `asOf`.
+- Velite builds MDX from `/content`; custom validation enforces reference integrity.
+- `robots` are `noindex` while this remains a private prototype.
+
+## Key-Figures Update Workflow
+
+Edit `content/data/key-figures.json`, keep the schema fields intact, then run:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run validate
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+CI repeats the same checks before the static export artifact is accepted.

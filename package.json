@@ -1,27 +1,98 @@
 {
-  "name": "code",
+  "name": "ecce-prototype",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run tokens && npm run content:build && next dev",
+    "prebuild": "npm run tokens && npm run content:build && npm run validate",
     "build": "next build",
+    "build:ci": "npm run lint && npm run stylelint && npm run typecheck && npm run test && npm run build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint .",
+    "stylelint": "stylelint \"src/**/*.css\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "tokens": "tsx scripts/generate-tokens.ts",
+    "content:seed": "python scripts/seed-from-docx.py",
+    "content:build": "velite",
+    "validate": "tsx scripts/validate-content.ts && tsx scripts/validate-key-figures.ts",
+    "ladle": "ladle serve",
+    "ladle:build": "ladle build",
+    "lhci": "lhci autorun",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=22.13.0",
+    "npm": ">=10"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,md,json}": [
+      "prettier --write"
+    ],
+    "*.css": [
+      "stylelint --fix"
+    ]
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@visx/visx": "^3.12.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^1.14.0",
+    "maplibre-gl": "^5.24.0",
+    "next": "15.5.18",
+    "next-intl": "^4.11.1",
+    "pmtiles": "^4.4.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "next": "15.5.18"
+    "tailwind-merge": "^3.5.0",
+    "three": "^0.184.0",
+    "velite": "^0.3.1",
+    "yaml": "^2.8.4",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@axe-core/playwright": "^4.11.3",
+    "@eslint/eslintrc": "^3",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/jetbrains-mono": "^5.2.8",
+    "@fontsource-variable/newsreader": "^5.2.10",
+    "@ladle/react": "^5.1.1",
+    "@lhci/cli": "^0.15.1",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.18",
-    "@eslint/eslintrc": "^3"
+    "husky": "^9.1.7",
+    "jsdom": "^28.1.0",
+    "lighthouse": "^12.8.2",
+    "lint-staged": "^16.4.0",
+    "playwright": "^1.59.1",
+    "prettier": "^3.8.3",
+    "stylelint": "^17.11.0",
+    "stylelint-config-standard": "^40.0.0",
+    "stylelint-config-tailwindcss": "^1.0.1",
+    "tailwindcss": "^4",
+    "tsx": "^4.21.0",
+    "typescript": "^5",
+    "typescript-eslint": "^8.59.2",
+    "vitest": "^4.1.5"
   }
 }

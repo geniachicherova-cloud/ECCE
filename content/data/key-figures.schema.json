@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ecce.iarc.who.int/schemas/key-figures.schema.json",
+  "title": "ECCE Key Figures",
+  "description": "Authoritative list of public-facing numbers shown on the ECCE website. Every figure must carry a source, an owner, and a last-updated date. Build fails if any required field is missing or invalid.",
+  "type": "object",
+  "required": ["version", "lastUpdated", "owner", "figures"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the figures dataset."
+    },
+    "lastUpdated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the file was last updated, ISO 8601 (YYYY-MM-DD)."
+    },
+    "owner": {
+      "type": "string",
+      "description": "Name or role of the person responsible for this dataset (e.g. 'Genia Chicherova, IARC')."
+    },
+    "figures": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/figure" }
+    }
+  },
+  "$defs": {
+    "figure": {
+      "type": "object",
+      "required": ["id", "label_en", "value", "asOf", "source", "owner"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "Stable kebab/snake identifier, used in code. Never change after publish."
+        },
+        "label_en": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 80,
+          "description": "Public-facing English label (e.g. 'Partner institutes')."
+        },
+        "label_fr": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "label_es": { "type": "string", "minLength": 2, "maxLength": 80 },
+        "value": {
+          "type": "number",
+          "minimum": 0,
+          "description": "The numeric value displayed."
+        },
+        "unit": {
+          "type": ["string", "null"],
+          "description": "Optional unit suffix (e.g. 'samples', 'years', '+'). Use null for no unit."
+        },
+        "prefix": {
+          "type": ["string", "null"],
+          "description": "Optional prefix (e.g. '€', '$'). Usually null for ECCE."
+        },
+        "display": {
+          "type": "string",
+          "enum": ["exact", "approx", "target"],
+          "description": "exact = display as-is; approx = render with '~' or '+'; target = render as 'target: X' or '/X'.",
+          "default": "exact"
+        },
+        "asOf": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO 8601 date this value was correct as of."
+        },
+        "source": {
+          "type": "object",
+          "required": ["label"],
+          "additionalProperties": false,
+          "properties": {
+            "label": { "type": "string", "minLength": 2, "description": "Human-readable source description (e.g. 'WP1 enrollment register')." },
+            "url": { "type": "string", "format": "uri", "description": "Optional URL to the canonical source." },
+            "doi": { "type": "string", "description": "Optional DOI of cited publication." }
+          }
+        },
+        "owner": {
+          "type": "string",
+          "minLength": 2,
+          "description": "Person or role who owns the value (e.g. 'Genia Chicherova, IARC project manager')."
+        },
+        "showOn": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Routes where this figure may render (e.g. ['/', '/about', '/research/wp1-epidemiology']). Omit for global."
+        },
+        "category": {
+          "type": "string",
+          "enum": ["scope", "samples", "genomics", "microbiome", "team", "publications", "meetings"],
+          "description": "Group used for layout / filtering."
+        },
+        "isPublic": {
+          "type": "boolean",
+          "default": true,
+          "description": "If false, kept in dataset but excluded from the build."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Internal notes — never rendered."
+        }
+      }
+    }
+  }
+}
