@@ -194,7 +194,7 @@
       "source": { "label": "European Research Council Synergy Grant" },
       "owner": "Paul Brennan, IARC",
       "showOn": ["/about"],
-      "notes": "Display as text label, not a number. Codex: render this card with a label-only variant."
+      "notes": "Display as a text label rather than a numeric stat — render with the label-only card variant."
     }
   ]
 }

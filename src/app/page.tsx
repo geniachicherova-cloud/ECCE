@@ -23,7 +23,7 @@ export default function Home(): ReactNode {
             Decoding the molecular origins of colorectal cancer.
           </h1>
           <p className="mt-6 max-w-2xl text-xl leading-relaxed text-[var(--ecce-color-ink-mid)]">
-            A static-export prototype foundation for the ECCE consortium website, ready for Gate 5 review.
+            An ERC Synergy project investigating early-onset cancer through 12,400 genomes across 35 global institutes.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <ButtonLink href="/research">Explore the science</ButtonLink>

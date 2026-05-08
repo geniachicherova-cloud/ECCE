@@ -3,9 +3,7 @@
   "metadata": {
     "name": "ECCE Design Tokens",
     "version": "1.0.0",
-    "direction": "Molecular Cartography (Direction A)",
-    "owner": "Claude Code (architect)",
-    "status": "specification — to be reviewed alongside Gemini's color exploration before lock",
+    "direction": "Molecular Cartography",
     "lastUpdated": "2026-05-08"
   },
   "color": {
