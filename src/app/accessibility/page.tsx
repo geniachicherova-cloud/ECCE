@@ -14,7 +14,7 @@ export default function AccessibilityPage(): ReactNode {
       <SectionHeader
         eyebrow="Accessibility"
         title="Accessibility statement draft"
-        lead="The prototype target is WCAG 2.2 AA, with automated checks and manual screen-reader passes scheduled in Phase E."
+        lead="The prototype targets WCAG 2.2 AA, with automated checks and manual screen-reader passes built into the deployment pipeline."
       />
       <div className="mt-8">
         <Tag tone="amber">Draft pending IARC communications review</Tag>

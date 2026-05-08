@@ -16,7 +16,7 @@ export default function InsightsPage(): ReactNode {
       <SectionHeader
         eyebrow="Insights"
         title="Editorial-grade stories about the work behind ECCE."
-        lead="Phase B provides the long-form template and category routing; final copy and assets remain review-gated."
+        lead="Field reports, the global journey of ECCE samples, and pathology stories from across the consortium."
       />
       <div className="mt-10 flex flex-wrap gap-3">
         <ButtonLink href="/insights/field-work" variant="secondary">Field work</ButtonLink>
